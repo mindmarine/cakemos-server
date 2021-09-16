@@ -4,8 +4,12 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 
 // require route files
-const exampleRoutes = require('./app/routes/example_routes')
+const exampleRoutes = require('./app/routes/influencer_routes')
 const userRoutes = require('./app/routes/user_routes')
+// require app routes
+const influencerRoutes = require('./app/routes/influencer_routes')
+const packageRoutes = require('./app/routes/package_routes')
+const orderRoutes = require('./app/routes/package_routes')
 
 // require middleware
 const errorHandler = require('./lib/error_handler')
@@ -55,9 +59,17 @@ app.use(express.urlencoded({ extended: true }))
 // log each request as it comes in for debugging
 app.use(requestLogger)
 
+// IMPORTANT
+// Access the routes
+app.get('/', (req, res) => res.send('cakemos baby steps. cakemos homepage. cakemos influencers'))
+
 // register route files
 app.use(exampleRoutes)
 app.use(userRoutes)
+// add cakemos specific routes
+app.use(influencerRoutes)
+app.use(packageRoutes)
+app.use(orderRoutes)
 
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
