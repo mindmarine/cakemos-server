@@ -81,3 +81,9 @@ Note: Due to the first line of code in the server.js file, the default deploymen
 - Ex: `heroku config:set DB_URI="mongodb+srv://admin:yellowpencil@cluster0.pygcn.mongodb.net/atlas_db_test?retryWrites=true&w=majority"`
 NOTE: You don't have a database at this point yet, but MongoDB will create it as soon as you use your application to create data. 
 So, in the example above, the atlas_db_test database will not exist until the first user is created via a sign-up.
+
+# Client
+…or push an existing repository from the command line
+git remote add origin git@github.com:mindmarine/cakemos-client.git
+git branch -M main
+git push -u origin main

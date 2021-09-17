@@ -4,9 +4,18 @@
 const mongooseBaseName = 'cakemos'
 
 // create the mongodb uri for development and test
+// initial config
+// const database = {
+//   development: `mongodb://localhost/${mongooseBaseName}-development`,
+//   test: `mongodb://localhost/${mongooseBaseName}-test`
+// }
+
+// `mongodb+srv://admin:ZvjszV50SJhYJnfp@cakemoscluster0.ieuly.mongodb.net/${mongooseBaseName}-development?retryWrites=true&w=majority`
+// `mongodb+srv://admin:ZvjszV50SJhYJnfp@cakemoscluster0.ieuly.mongodb.net/${mongooseBaseName}-test?retryWrites=true&w=majority`
+
 const database = {
-  development: `mongodb://localhost/${mongooseBaseName}-development`,
-  test: `mongodb://localhost/${mongooseBaseName}-test`
+  development: `mongodb+srv://admin:ZvjszV50SJhYJnfp@cakemoscluster0.ieuly.mongodb.net/${mongooseBaseName}-development?retryWrites=true&w=majority`,
+  test: `mongodb+srv://admin:ZvjszV50SJhYJnfp@cakemoscluster0.ieuly.mongodb.net/${mongooseBaseName}-test?retryWrites=true&w=majority`
 }
 
 // Identify if development environment is test or development
