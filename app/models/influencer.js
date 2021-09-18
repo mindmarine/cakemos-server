@@ -55,11 +55,11 @@ const influencerSchema = new mongoose.Schema({
     type: String,
     required: false
   },
-  twitteraudeincesize: {
+  twitteraudiencesize: {
     type: String,
     required: false
   },
-  tiktokaudeincesize: {
+  tiktokaudiencesize: {
     type: String,
     required: false
   },
@@ -67,8 +67,34 @@ const influencerSchema = new mongoose.Schema({
     type: String,
     required: false
   },
+  // topic
+  topics: {
+    type: String,
+    required: false
+  },
   // tags
   tags: {
+    type: String,
+    required: false
+  },
+  // followers engagement
+  youtubeengagement: {
+    type: String,
+    required: false
+  },
+  instagramengagement: {
+    type: String,
+    required: false
+  },
+  twitterengagement: {
+    type: String,
+    required: false
+  },
+  tiktokengagement: {
+    type: String,
+    required: false
+  },
+  twitchengagement: {
     type: String,
     required: false
   },
