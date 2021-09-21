@@ -108,16 +108,17 @@ https://react-bootstrap.github.io/components/table/
 ## Catalog of Routes
 
 ### Front End Routes
-| entity     | route path                    | verb   | functionality                                                        |
-| ---------- | ----------------------------- | ------ | -------------------------------------------------------------------- |
-| user       | /sign-up                      | POST   | form to sign up: username, email, password and password confirmation |
-| user       | /sign-in                      | POST   | let users sign in with email and password                            |
-| user       | /sign-out                     | DELETE | signs out login users                                                |
-| user       | /change-password              | PATCH  | allows users to change password                                      |
-| influencer | /add-influencer               | POST   | this enable signed in users to make a post                           |
-| influencer | /show-influencers             | GET    | shows all influencers                                                |
-| influencer | /influencerstable             | GET    | shows influencers table                                              |
-| influencer | /update-influencer/:id/editv2 | PATCH  | update influencerposts                                               |
+| entity      | route path                    | verb   | functionality                                                        |
+| ----------- | ----------------------------- | ------ | -------------------------------------------------------------------- |
+| user        | /sign-up                      | POST   | form to sign up: username, email, password and password confirmation |
+| user        | /sign-in                      | POST   | let users sign in with email and password                            |
+| user        | /sign-out                     | DELETE | signs out login users                                                |
+| user        | /change-password              | PATCH  | allows users to change password                                      |
+| influencer  | /add-influencer               | POST   | this enable signed in users to make a post                           |
+| influencer  | /show-influencers             | GET    | shows all influencers                                                |
+| influencer  | /influencerstable             | GET    | shows influencers table                                              |
+| influencer  | /update-influencer/:id/editv2 | PATCH  | update influencer                                                    |
+| guest, user | /inspiration                  | GET    | Inspiration Page                                                     |
 
 ### Back End (API) Routes
 | entity     | route path       | verb          | functionality              |
